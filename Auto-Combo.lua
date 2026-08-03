@@ -117,7 +117,7 @@ task.spawn(function()
     end
 end)
 
--- ===================== RED OUTLINE ON CAMLOCK TARGET =====================
+-- ===================== RED OUTLINE ON CAMLOCK TARGET (Fixed) =====================
 task.spawn(function()
     local Players = game:GetService("Players")
     local RunService = game:GetService("RunService")
@@ -126,18 +126,21 @@ task.spawn(function()
 
     local currentHighlight = nil
     local currentTarget = nil
+    local lastLockTime = 0
 
     local function removeHighlight()
         if currentHighlight then
             pcall(function() currentHighlight:Destroy() end)
-            currentHighlight = nil
         end
+        currentHighlight = nil
         currentTarget = nil
     end
 
     local function applyHighlight(char)
         if not char or not char.Parent then return end
-        if currentTarget == char and currentHighlight and currentHighlight.Parent then return end
+        if currentTarget == char and currentHighlight and currentHighlight.Parent then
+            return
+        end
         removeHighlight()
 
         local hl = Instance.new("Highlight")
@@ -145,10 +148,11 @@ task.spawn(function()
         hl.Adornee = char
         hl.FillColor = Color3.fromRGB(255, 0, 0)
         hl.OutlineColor = Color3.fromRGB(255, 0, 0)
-        hl.FillTransparency = 0.7
+        hl.FillTransparency = 0.65
         hl.OutlineTransparency = 0
         hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
         hl.Parent = char
+
         currentHighlight = hl
         currentTarget = char
     end
@@ -162,16 +166,18 @@ task.spawn(function()
 
         local camPos = cam.CFrame.Position
         local look = cam.CFrame.LookVector
-        local bestChar, bestScore = nil, 0.82
+
+        local bestChar = nil
+        local bestScore = 0
 
         for _, plr in ipairs(Players:GetPlayers()) do
             if plr ~= lp and plr.Character then
                 local hum = plr.Character:FindFirstChildOfClass("Humanoid")
                 local hrp = plr.Character:FindFirstChild("HumanoidRootPart") or plr.Character:FindFirstChild("Head")
                 if hum and hum.Health > 0 and hrp then
-                    local dir = (hrp.Position - camPos)
+                    local dir = hrp.Position - camPos
                     local dist = dir.Magnitude
-                    if dist > 1 and dist < 500 then
+                    if dist > 2 and dist < 400 then
                         local alignment = look:Dot(dir.Unit)
                         if alignment > bestScore then
                             bestScore = alignment
@@ -182,10 +188,16 @@ task.spawn(function()
             end
         end
 
-        if bestChar then
+        -- Chỉ hiện viền khi đang lock rất chắc (CamLock đang bật)
+        -- Threshold cao = chỉ hiện khi camera bị ép nhìn thẳng vào target
+        if bestChar and bestScore >= 0.93 then
+            lastLockTime = tick()
             applyHighlight(bestChar)
         else
-            removeHighlight()
+            -- Nếu không còn lock chắc trong 0.15s thì xóa viền (tắt CamLock hoặc chuyển target)
+            if tick() - lastLockTime > 0.15 then
+                removeHighlight()
+            end
         end
     end)
 end)
