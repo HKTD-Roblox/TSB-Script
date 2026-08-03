@@ -190,7 +190,6 @@ task.spawn(function()
     end)
 end)
 
-print("[Keyless v1] Bypass đầu + Big HKTD + Red CamLock Outline")
 -- ============================================================
 
 
