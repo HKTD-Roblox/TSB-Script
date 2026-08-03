@@ -117,7 +117,7 @@ task.spawn(function()
     end
 end)
 
--- ===================== RED OUTLINE ON CAMLOCK TARGET (Fixed) =====================
+-- ===================== RED OUTLINE ON CAMLOCK TARGET (v3) =====================
 task.spawn(function()
     local Players = game:GetService("Players")
     local RunService = game:GetService("RunService")
@@ -126,7 +126,6 @@ task.spawn(function()
 
     local currentHighlight = nil
     local currentTarget = nil
-    local lastLockTime = 0
 
     local function removeHighlight()
         if currentHighlight then
@@ -164,11 +163,21 @@ task.spawn(function()
             return
         end
 
+        -- Cách 1: CamLock thường set CameraType = Scriptable khi bật
+        local camLockOn = (cam.CameraType == Enum.CameraType.Scriptable)
+
+        -- Nếu không phải Scriptable thì coi như tắt → xóa viền
+        if not camLockOn then
+            removeHighlight()
+            return
+        end
+
+        -- Đang bật CamLock → tìm người đang bị nhìn thẳng nhất
         local camPos = cam.CFrame.Position
         local look = cam.CFrame.LookVector
 
         local bestChar = nil
-        local bestScore = 0
+        local bestScore = 0.85
 
         for _, plr in ipairs(Players:GetPlayers()) do
             if plr ~= lp and plr.Character then
@@ -177,7 +186,7 @@ task.spawn(function()
                 if hum and hum.Health > 0 and hrp then
                     local dir = hrp.Position - camPos
                     local dist = dir.Magnitude
-                    if dist > 2 and dist < 400 then
+                    if dist > 2 and dist < 450 then
                         local alignment = look:Dot(dir.Unit)
                         if alignment > bestScore then
                             bestScore = alignment
@@ -188,16 +197,10 @@ task.spawn(function()
             end
         end
 
-        -- Chỉ hiện viền khi đang lock rất chắc (CamLock đang bật)
-        -- Threshold cao = chỉ hiện khi camera bị ép nhìn thẳng vào target
-        if bestChar and bestScore >= 0.93 then
-            lastLockTime = tick()
+        if bestChar then
             applyHighlight(bestChar)
         else
-            -- Nếu không còn lock chắc trong 0.15s thì xóa viền (tắt CamLock hoặc chuyển target)
-            if tick() - lastLockTime > 0.15 then
-                removeHighlight()
-            end
+            removeHighlight()
         end
     end)
 end)
