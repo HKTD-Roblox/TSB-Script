@@ -153,7 +153,6 @@ task.spawn(function()
         currentTarget = char
     end
 
-    -- Chỉ đọc chữ, không sửa chữ
     task.spawn(function()
         while true do
             camLockEnabled = false
@@ -162,17 +161,14 @@ task.spawn(function()
                 for _, obj in ipairs(pg:GetDescendants()) do
                     if obj:IsA("TextLabel") or obj:IsA("TextButton") then
                         local t = string.lower(obj.Text or "")
-                        -- nhận đúng chữ gốc: "Camlock - ON"
-                        if t:find("camlock") and t:find("on") and not t:find("off") then
+                        if (t:find("camlock") or t:find("camlock")) and t:find("on") and not t:find("off") then
                             camLockEnabled = true
                             break
                         end
                     end
                 end
             end
-            if not camLockEnabled then
-                removeHighlight()
-            end
+            if not camLockEnabled then removeHighlight() end
             task.wait(0.15)
         end
     end)
@@ -184,10 +180,7 @@ task.spawn(function()
         end
 
         local cam = workspace.CurrentCamera
-        if not cam then
-            removeHighlight()
-            return
-        end
+        if not cam then removeHighlight() return end
 
         local camPos = cam.CFrame.Position
         local look = cam.CFrame.LookVector
