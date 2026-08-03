@@ -117,7 +117,7 @@ task.spawn(function()
     end
 end)
 
--- ===================== RED OUTLINE ON CAMLOCK TARGET (v3) =====================
+-- ===================== RED OUTLINE ON CAMLOCK TARGET =====================
 task.spawn(function()
     local Players = game:GetService("Players")
     local RunService = game:GetService("RunService")
@@ -126,6 +126,7 @@ task.spawn(function()
 
     local currentHighlight = nil
     local currentTarget = nil
+    local camLockEnabled = false
 
     local function removeHighlight()
         if currentHighlight then
@@ -137,9 +138,7 @@ task.spawn(function()
 
     local function applyHighlight(char)
         if not char or not char.Parent then return end
-        if currentTarget == char and currentHighlight and currentHighlight.Parent then
-            return
-        end
+        if currentTarget == char and currentHighlight and currentHighlight.Parent then return end
         removeHighlight()
 
         local hl = Instance.new("Highlight")
@@ -151,33 +150,42 @@ task.spawn(function()
         hl.OutlineTransparency = 0
         hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
         hl.Parent = char
-
         currentHighlight = hl
         currentTarget = char
     end
 
+    task.spawn(function()
+        while true do
+            camLockEnabled = false
+            local pg = lp:FindFirstChild("PlayerGui")
+            if pg then
+                for _, obj in ipairs(pg:GetDescendants()) do
+                    if obj:IsA("TextLabel") or obj:IsA("TextButton") then
+                        local t = string.lower(obj.Text or "")
+                        if (t:find("camlock") or t:find("cam lock")) and t:find("on") and not t:find("off") then
+                            camLockEnabled = true
+                            break
+                        end
+                    end
+                end
+            end
+            if not camLockEnabled then removeHighlight() end
+            task.wait(0.15)
+        end
+    end)
+
     RunService.RenderStepped:Connect(function()
+        if not camLockEnabled then
+            removeHighlight()
+            return
+        end
+
         local cam = workspace.CurrentCamera
-        if not cam then
-            removeHighlight()
-            return
-        end
+        if not cam then removeHighlight() return end
 
-        -- Cách 1: CamLock thường set CameraType = Scriptable khi bật
-        local camLockOn = (cam.CameraType == Enum.CameraType.Scriptable)
-
-        -- Nếu không phải Scriptable thì coi như tắt → xóa viền
-        if not camLockOn then
-            removeHighlight()
-            return
-        end
-
-        -- Đang bật CamLock → tìm người đang bị nhìn thẳng nhất
         local camPos = cam.CFrame.Position
         local look = cam.CFrame.LookVector
-
-        local bestChar = nil
-        local bestScore = 0.85
+        local bestChar, bestScore = nil, 0.88
 
         for _, plr in ipairs(Players:GetPlayers()) do
             if plr ~= lp and plr.Character then
@@ -204,7 +212,6 @@ task.spawn(function()
         end
     end)
 end)
-
 -- ============================================================
 
 
