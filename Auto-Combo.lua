@@ -73,28 +73,27 @@ pcall(function()
     end
 end)
 
--- ===================== BIGGER "Made By HKTD" =====================
+-- ===================== MADE BY HKTD ROBLOX =====================
 task.spawn(function()
     local Players = game:GetService("Players")
     local lp = Players.LocalPlayer
     if not lp then return end
 
-    local function enlarge(obj)
-        if obj and (obj:IsA("TextLabel") or obj:IsA("TextButton")) then
+    local function fixText(obj)
+        if not obj or not (obj:IsA("TextLabel") or obj:IsA("TextButton")) then return end
+        local t = obj.Text or ""
+        if t:find("HKTD") or t:find("Made By") or t:find("Made by") then
+            obj.Text = "Made By HKTD Roblox"
             obj.TextScaled = false
-            obj.TextSize = 22
-            obj.Font = Enum.Font.GothamBold
+            obj.TextSize = 14          -- nhỏ vừa đẹp
+            obj.Font = Enum.Font.Gotham
+            obj.TextXAlignment = Enum.TextXAlignment.Center
         end
     end
 
     local function scan(parent)
         for _, child in ipairs(parent:GetDescendants()) do
-            if child:IsA("TextLabel") or child:IsA("TextButton") then
-                local t = child.Text or ""
-                if t:find("HKTD") or t:find("Made By") or t:find("Made by") then
-                    enlarge(child)
-                end
-            end
+            fixText(child)
         end
     end
 
@@ -102,16 +101,11 @@ task.spawn(function()
     if pg then
         scan(pg)
         pg.DescendantAdded:Connect(function(desc)
-            if desc:IsA("TextLabel") or desc:IsA("TextButton") then
-                local t = desc.Text or ""
-                if t:find("HKTD") or t:find("Made By") or t:find("Made by") then
-                    task.wait(0.05)
-                    enlarge(desc)
-                end
-            end
+            task.wait(0.05)
+            fixText(desc)
         end)
-        for _ = 1, 8 do
-            task.wait(0.6)
+        for _ = 1, 10 do
+            task.wait(0.4)
             scan(pg)
         end
     end
