@@ -71,20 +71,49 @@ task.spawn(function()
     local lp = Players.LocalPlayer
     if not lp then return end
 
+    local targets = {}
+
+    local function fix(obj)
+        if not obj or not obj.Parent then return end
+        if not (obj:IsA("TextLabel") or obj:IsA("TextButton")) then return end
+
+        local t = tostring(obj.Text or "")
+        if t:find("HKTD") or t:find("Made By") then
+            obj.Text = "Made By HKTD Roblox ⭐"
+            obj.TextScaled = false
+            obj.TextSize = 16
+            obj.Font = Enum.Font.Gotham
+            targets[obj] = true
+        end
+    end
+
+    local function scan()
+        local pg = lp:FindFirstChild("PlayerGui")
+        if not pg then return end
+        for _, obj in ipairs(pg:GetDescendants()) do
+            fix(obj)
+        end
+    end
+
+    scan()
+
     local pg = lp:WaitForChild("PlayerGui", 10)
-    if not pg then return end
+    if pg then
+        pg.DescendantAdded:Connect(function(obj)
+            task.wait(0.03)
+            fix(obj)
+        end)
+    end
 
-    for _, obj in ipairs(pg:GetDescendants()) do
-        if obj:IsA("TextLabel") or obj:IsA("TextButton") then
-            local t = tostring(obj.Text or "")
-
-            if t:find("HKTD") or t:find("Made By") then
-                obj.Text = "Made By HKTD Roblox ⭐"
-                obj.TextScaled = false
-                obj.TextSize = 16
-                obj.Font = Enum.Font.Gotham
+    while true do
+        for obj in pairs(targets) do
+            if obj and obj.Parent then
+                fix(obj)
+            else
+                targets[obj] = nil
             end
         end
+        task.wait(0.25)
     end
 end)
 
