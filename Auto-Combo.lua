@@ -79,7 +79,7 @@ task.spawn(function()
 
         local t = tostring(obj.Text or "")
         if t:find("HKTD") or t:find("Made By") then
-            obj.Text = "Made By HKTD Roblox ⭐"
+            obj.Text = "Made By HKTD Roblox"
             obj.TextScaled = false
             obj.TextSize = 16
             obj.Font = Enum.Font.Gotham
