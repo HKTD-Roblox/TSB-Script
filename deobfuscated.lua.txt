@@ -1,0 +1,971 @@
+Instance.new"ScreenGui".Name = "Name";
+Instance.new"ScreenGui".Parent = game.Players.LocalPlayer:WaitForChild"PlayerGui";
+Instance.new"ScreenGui".ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+Instance.new"ScreenGui".ResetOnSpawn = "ResetOnSpawn";
+Instance.new"Frame".Name = "Name";
+Instance.new"Frame".Parent = Instance.new"ScreenGui";
+Instance.new"Frame".AnchorPoint = Vector2.new(0.5, 0.5);
+Instance.new"Frame".BackgroundColor3 = Color3.fromRGB(35, 35, 35);
+Instance.new"Frame".BorderColor3 = Color3.fromRGB(10, 10, 10);
+Instance.new"Frame".BorderSizePixel = "BorderSizePixel";
+Instance.new"Frame".Position = UDim2.new(0.5, 0, 0.5, 0);
+Instance.new"Frame".Size = UDim2.new(0, 350, 0, 200);
+Instance.new"TextLabel".Name = "Name";
+Instance.new"TextLabel".Parent = Instance.new"Frame";
+Instance.new"TextLabel".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Instance.new"TextLabel".BackgroundTransparency = "BackgroundTransparency";
+Instance.new"TextLabel".BorderColor3 = Color3.fromRGB(0, 0, 0);
+Instance.new"TextLabel".BorderSizePixel = "BorderSizePixel";
+Instance.new"TextLabel".Size = UDim2.new(1, 0, 0, 50);
+Instance.new"TextLabel".Font = Enum.Font.GothamBold;
+Instance.new"TextLabel".Text = "Text";
+Instance.new"TextLabel".TextColor3 = Color3.fromRGB(255, 255, 255);
+Instance.new"TextLabel".TextSize = "TextSize";
+Instance.new"TextLabel".TextWrapped = "TextWrapped";
+Instance.new"TextLabel".Name = "Name";
+Instance.new"TextLabel".Parent = Instance.new"Frame";
+Instance.new"TextLabel".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Instance.new"TextLabel".BackgroundTransparency = "BackgroundTransparency";
+Instance.new"TextLabel".BorderColor3 = Color3.fromRGB(0, 0, 0);
+Instance.new"TextLabel".BorderSizePixel = "BorderSizePixel";
+Instance.new"TextLabel".Position = UDim2.new(0, 0, 0.222000003, 0);
+Instance.new"TextLabel".Size = UDim2.new(1, 0, 0, 20);
+Instance.new"TextLabel".Font = Enum.Font.Gotham;
+Instance.new"TextLabel".Text = "Text";
+Instance.new"TextLabel".TextColor3 = Color3.fromRGB(255, 255, 255);
+Instance.new"TextLabel".TextSize = "TextSize";
+Instance.new"TextLabel".TextWrapped = "TextWrapped";
+Instance.new"TextButton".Name = "Name";
+Instance.new"TextButton".Parent = Instance.new"Frame";
+Instance.new"TextButton".AnchorPoint = Vector2.new(0.5, 0.5);
+Instance.new"TextButton".BackgroundColor3 = Color3.fromRGB(27, 27, 27);
+Instance.new"TextButton".BorderColor3 = Color3.fromRGB(10, 10, 10);
+Instance.new"TextButton".Position = UDim2.new(0.275000006, 0, 0.800000012, 0);
+Instance.new"TextButton".Size = UDim2.new(0.425000012, 0, 0.25, 0);
+Instance.new"TextButton".Font = Enum.Font.Gotham;
+Instance.new"TextButton".Text = "Text";
+Instance.new"TextButton".TextColor3 = Color3.fromRGB(255, 255, 255);
+Instance.new"TextButton".TextSize = "TextSize";
+Instance.new"TextButton".TextWrapped = "TextWrapped";
+Instance.new"TextButton".Name = "Name";
+Instance.new"TextButton".Parent = Instance.new"Frame";
+Instance.new"TextButton".AnchorPoint = Vector2.new(0.5, 0.5);
+Instance.new"TextButton".BackgroundColor3 = Color3.fromRGB(27, 27, 27);
+Instance.new"TextButton".BorderColor3 = Color3.fromRGB(10, 10, 10);
+Instance.new"TextButton".Position = UDim2.new(0.725000024, 0, 0.800000012, 0);
+Instance.new"TextButton".Size = UDim2.new(0.425000012, 0, 0.25, 0);
+Instance.new"TextButton".Font = Enum.Font.Gotham;
+Instance.new"TextButton".Text = "Text";
+Instance.new"TextButton".TextColor3 = Color3.fromRGB(255, 255, 255);
+Instance.new"TextButton".TextSize = "TextSize";
+Instance.new"TextButton".TextWrapped = "TextWrapped";
+Instance.new"TextBox".Name = "Name";
+Instance.new"TextBox".Parent = Instance.new"Frame";
+Instance.new"TextBox".AnchorPoint = Vector2.new(0.5, 0.5);
+Instance.new"TextBox".BackgroundColor3 = Color3.fromRGB(55, 55, 55);
+Instance.new"TextBox".BorderColor3 = Color3.fromRGB(20, 20, 20);
+Instance.new"TextBox".BorderSizePixel = "BorderSizePixel";
+Instance.new"TextBox".Position = UDim2.new(0.5, 0, 0.5, 0);
+Instance.new"TextBox".Size = UDim2.new(0.899999976, 0, 0, 50);
+Instance.new"TextBox".Font = Enum.Font.Gotham;
+Instance.new"TextBox".Text = "Text";
+Instance.new"TextBox".TextColor3 = Color3.fromRGB(255, 255, 255);
+Instance.new"TextBox".TextSize = "TextSize";
+Instance.new"TextBox".TextWrapped = "TextWrapped";
+if request then
+  if http.request then
+    if http_request then
+      getLink = function() end;
+      verify = function() end;
+      VerifyIsTrue = function() end;
+      Instance.new"TextButton".MouseButton1Click:Connect(function() end);
+      Instance.new"TextButton".MouseButton1Click:Connect(function() end);
+      function() end("Please Wait", true, false, true);
+      VerifyIsTrue("", false);
+      return;
+      if not 0 then
+        if upvalue0 then
+          if not 0 then
+            nil.Size = UDim2.new(0.4, 0, 0.2, 0);
+            nil.Position = UDim2.new(0.3, 0, 0.4, 0);
+            nil.BackgroundColor3 = Color3.fromRGB(35, 35, 35);
+            nil.BorderColor3 = Color3.fromRGB(10, 10, 10);
+            nil.BorderSizePixel = "BorderSizePixel";
+            if not 2 then
+              upvalue1.TextColor3 = Color3.fromRGB(255, 255, 255);
+              upvalue1.TextSize = "TextSize";
+              upvalue1.TextScaled = "TextScaled";
+              upvalue1.Font = Enum.Font.Gotham;
+              upvalue1.TextWrapped = "TextWrapped";
+              if not 4 then
+                nil.Parent = upvalue0;
+                upvalue1 = Instance.new"TextLabel";
+                upvalue1.Size = UDim2.new(1, 0, 0.8, 0);
+                upvalue1.Position = UDim2.new(0, 0, 0, 0);
+                upvalue1.BackgroundTransparency = "BackgroundTransparency";
+                if not 3 then
+                  upvalue2.BackgroundColor3 = Color3.fromRGB(27, 27, 27);
+                  upvalue2.BorderColor3 = Color3.fromRGB(10, 10, 10);
+                  upvalue2.TextColor3 = Color3.fromRGB(255, 255, 255);
+                  upvalue2.TextSize = "TextSize";
+                  upvalue2.Font = Enum.Font.Gotham;
+                  if not 6 then
+                    upvalue2.Text = "Text";
+                    upvalue2.TextWrapped = "TextWrapped";
+                    upvalue2.Parent = nil;
+                    if not Instance.new"TextLabel" then
+                      upvalue2.Visible = "Visible";
+                      upvalue2.MouseButton1Click:Connect(function() end);
+                      if not 6 then
+                        upvalue1.Text = upvalue1;
+                        upvalue1.Parent = nil;
+                        upvalue2 = Instance.new"TextButton";
+                        upvalue2.Size = UDim2.new(1, 0, 0.2, 0);
+                        upvalue2.Position = UDim2.new(0, 0, 0.8, 0);
+                        if not 5 then
+                          upvalue0 = Instance.new"ScreenGui";
+                          upvalue0.Name = "Name";
+                          upvalue0.Parent = nil;
+                          upvalue0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+                        end
+                        if not 0 then
+                          if not Instance.new"TextLabel" then
+                            upvalue2.Visible = "Visible";
+                            upvalue2.Visible = "Visible";
+                            upvalue1.Text = upvalue1;
+                          end
+                          if not Instance.new"Frame" then
+                            upvalue0:Destroy();
+                            if not 0 then
+                              if not 0 then
+                                if not 1 then
+                                end
+                              end
+                              return;
+                              if not 0 then
+                                upvalue0:Destroy();
+                                upvalue1 = nil;
+                                upvalue0 = nil;
+                              end
+                              return;
+                              return;
+                              if not nil then
+                                upvalue0(0, nil, nil);
+                                return;
+                                return;
+                                if not 0 then
+                                  if upvalue0 then
+                                    if not upvalue1 then
+                                      if not 0 then
+                                        if not 0 then
+                                          if not 0 then
+                                            upvalue2("Verification skipped due to errorWait or rateLimit.");
+                                            return false;
+                                          end
+                                        end
+                                      end
+                                      upvalue3("Checking key...", "https://gateway.platoboost.com/a/%i?id=%i");
+                                      if not 1 then
+                                        upvalue3("Checking key...", "https://gateway.platoboost.com/a/%i?id=%i");
+                                        if not 2 then
+                                          if not upvalue4 then
+                                            if not 0 then
+                                              pcall(function() end);
+                                              if not pcall then
+                                                if not (0 == 0) then
+                                                  upvalue2(("Response received: " .. function() end));
+                                                  if not string.find(function() end, "true") then
+                                                    if not 0 then
+                                                      if not 0 then
+                                                        if not 0 then
+                                                          upvalue3("Successfully whitelisted!", "https://gateway.platoboost.com/a/%i?id=%i", true);
+                                                          return true;
+                                                        end
+                                                      end
+                                                    end
+                                                  end
+                                                  if not string.find(function() end, "false") then
+                                                    if not 0 then
+                                                      if not 0 then
+                                                        if not 0 then
+                                                          upvalue2("Key is invalid, attempting redemption.");
+                                                          if not upvalue8 then
+                                                            if not 0 then
+                                                              if not 0 then
+                                                                pcall(function() end);
+                                                                if not pcall then
+                                                                  if not 0 then
+                                                                    if not 0 then
+                                                                      upvalue2(("Redemption response received: " .. function() end));
+                                                                      if not string.find(function() end, "true") then
+                                                                        if not 0 then
+                                                                          if not (0 == 0) then
+                                                                            upvalue3("Successfully redeemed key!", "https://gateway.platoboost.com/a/%i?id=%i", true);
+                                                                            return true;
+                                                                          end
+                                                                          upvalue2(("Error redeeming key: " .. function() end));
+                                                                        end
+                                                                      end
+                                                                    end
+                                                                    if not 1 then
+                                                                      if not (0 == 0) then
+                                                                        upvalue3("Key is invalid!", "https://gateway.platoboost.com/a/%i?id=%i");
+                                                                        return false;
+                                                                      end
+                                                                    end
+                                                                  end
+                                                                end
+                                                              end
+                                                              if not 0 then
+                                                                if not 0 then
+                                                                  if not 0 then
+                                                                    upvalue2("Unexpected response format.", "https://gateway.platoboost.com/a/%i?id=%i");
+                                                                    return false;
+                                                                  end
+                                                                end
+                                                              end
+                                                            end
+                                                          end
+                                                          if not (0 == 0) then
+                                                            if not 0 then
+                                                              if not 0 then
+                                                                return upvalue9;
+                                                                if not (0 == 0) then
+                                                                  upvalue2(("Error occurred while contacting the server: " .. function() end));
+                                                                  upvalue3("An error occurred while contacting the server!", "https://gateway.platoboost.com/a/%i?id=%i");
+                                                                end
+                                                              end
+                                                            end
+                                                          end
+                                                        end
+                                                      end
+                                                    end
+                                                    pcall(function() end);
+                                                    if not pcall then
+                                                      upvalue2(("Response received: " .. function() end.Body));
+                                                      if not (function() end.StatusCode == 200) then
+                                                        if not string.find(function() end.Body, "true") then
+                                                          if not 0 then
+                                                            if not 0 then
+                                                              if not 0 then
+                                                                upvalue3("Successfully whitelisted key!", "https://gateway.platoboost.com/a/%i?id=%i", true);
+                                                                return true;
+                                                                if not 0 then
+                                                                  return false;
+                                                                  if not 0 then
+                                                                    if not upvalue8 then
+                                                                      if not 0 then
+                                                                        if not 0 then
+                                                                          upvalue2("Key is not whitelisted, attempting redemption.");
+                                                                          pcall(function() end);
+                                                                          if not 1 then
+                                                                            if not pcall then
+                                                                              if not 0 then
+                                                                                if not (0 == 0) then
+                                                                                  upvalue2(("Redemption response received: " .. function() end.Body));
+                                                                                  if not (function() end.StatusCode == 200) then
+                                                                                    if not string.find(function() end.Body, "true") then
+                                                                                      if not 0 then
+                                                                                        upvalue3("Successfully redeemed key!", "https://gateway.platoboost.com/a/%i?id=%i", true);
+                                                                                        return true;
+                                                                                        upvalue2(("Error redeeming key: " .. function() end));
+                                                                                      end
+                                                                                    end
+                                                                                  end
+                                                                                  upvalue3("Key is invalid!", "https://gateway.platoboost.com/a/%i?id=%i");
+                                                                                end
+                                                                                if not function() end.StatusCode then
+                                                                                  if not (1 == 0) then
+                                                                                    return false;
+                                                                                    if not 0 then
+                                                                                      upvalue2("Account wasn't found.");
+                                                                                      upvalue3("Account wasn't found, check accountId", "https://gateway.platoboost.com/a/%i?id=%i");
+                                                                                    end
+                                                                                    if not function() end.StatusCode then
+                                                                                      if upvalue1 then
+                                                                                        if not 0 then
+                                                                                          if not 0 then
+                                                                                            upvalue11(function() end);
+                                                                                            if not 0 then
+                                                                                              upvalue1 = true;
+                                                                                              upvalue12 = 10;
+                                                                                            end
+                                                                                          end
+                                                                                        end
+                                                                                        if not (0 == 0) then
+                                                                                          upvalue2(("Unexpected status code: " .. function() end.StatusCode));
+                                                                                          return upvalue9;
+                                                                                          if not 0 then
+                                                                                            upvalue2(("Error occurred while making request: " .. function() end));
+                                                                                            return upvalue9;
+                                                                                            return;
+                                                                                            upvalue0("https://api-gateway.platoboost.com/v1/public/whitelist/%i/%i?key=%s", upvalue1, upvalue2, upvalue3);
+                                                                                            return;
+                                                                                            return;
+                                                                                            return;
+                                                                                            return;
+                                                                                            {}.Url = upvalue1("https://api-gateway.platoboost.com/v1/public/whitelist/%i/%i?key=%s", upvalue2, upvalue3, upvalue4);
+                                                                                            {}.Method = "Method";
+                                                                                            return;
+                                                                                            return;
+                                                                                            {}.Url = upvalue1("https://api-gateway.platoboost.com/v1/authenticators/redeem/%i/%i/%s", upvalue2, upvalue3, upvalue4);
+                                                                                            {}.Method = "Method";
+                                                                                            return;
+                                                                                            return;
+                                                                                            if not upvalue0 then
+                                                                                              if not (0 == 0) then
+                                                                                                upvalue1(upvalue2("You are being rate-limited, please slow down. Try again in %i seconds.", upvalue3), upvalue4);
+                                                                                                upvalue51;
+                                                                                                if not 1 then
+                                                                                                  upvalue3 = (upvalue3 - 1);
+                                                                                                  if not (upvalue3 < 0) then
+                                                                                                    if not 0 then
+                                                                                                      upvalue1("Rate limit is over, please try again.", upvalue4);
+                                                                                                      if not 0 then
+                                                                                                        upvalue0 = false;
+                                                                                                        upvalue3 = 0;
+                                                                                                      end
+                                                                                                    end
+                                                                                                  end
+                                                                                                  return;
+                                                                                                  if not (verify(1, 1) == true) then
+                                                                                                    upvalue0("", true, true, false);
+                                                                                                    upvalue1.Enabled = "Enabled";
+                                                                                                    upvalue1:Destroy();
+                                                                                                    Instance.new"ScreenGui".Name = "Name";
+                                                                                                    Instance.new"ScreenGui".Parent = game.Players.LocalPlayer:WaitForChild"PlayerGui";
+                                                                                                    Instance.new"ScreenGui".ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+                                                                                                    Instance.new"ScreenGui".ResetOnSpawn = "ResetOnSpawn";
+                                                                                                    Instance.new"Frame".Parent = Instance.new"ScreenGui";
+                                                                                                    Instance.new"Frame".AnchorPoint = Vector2.new(0, 0.5);
+                                                                                                    Instance.new"Frame".BackgroundColor3 = Color3.fromRGB(35, 35, 35);
+                                                                                                    Instance.new"Frame".BorderColor3 = Color3.fromRGB(20, 20, 20);
+                                                                                                    Instance.new"Frame".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"Frame".Position = UDim2.new(0.00999999978, 0, 0.5, 0);
+                                                                                                    Instance.new"Frame".Size = UDim2.new(0.1, 100, 0.2, 100);
+                                                                                                    Instance.new"ScrollingFrame".Parent = Instance.new"Frame";
+                                                                                                    Instance.new"ScrollingFrame".Active = "Active";
+                                                                                                    Instance.new"ScrollingFrame".AnchorPoint = Vector2.new(0, 1);
+                                                                                                    Instance.new"ScrollingFrame".BackgroundColor3 = Color3.fromRGB(25, 25, 25);
+                                                                                                    Instance.new"ScrollingFrame".BorderColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"ScrollingFrame".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"ScrollingFrame".LayoutOrder = "LayoutOrder";
+                                                                                                    Instance.new"ScrollingFrame".Position = UDim2.new(0, 0, 1, 0);
+                                                                                                    Instance.new"ScrollingFrame".Size = UDim2.new(1, 0, 0.899999976, 0);
+                                                                                                    Instance.new"ScrollingFrame".CanvasSize = UDim2.new(0, 0, 1.5, 0);
+                                                                                                    Instance.new"ScrollingFrame".ScrollBarThickness = "ScrollBarThickness";
+                                                                                                    Instance.new"TextButton".Name = "Name";
+                                                                                                    Instance.new"TextButton".Parent = Instance.new"ScrollingFrame";
+                                                                                                    Instance.new"TextButton".BackgroundColor3 = Color3.fromRGB(20, 20, 20);
+                                                                                                    Instance.new"TextButton".BorderColor3 = Color3.fromRGB(10, 10, 10);
+                                                                                                    Instance.new"TextButton".LayoutOrder = "LayoutOrder";
+                                                                                                    Instance.new"TextButton".Position = UDim2.new(0, 0, 0.00999999978, 0);
+                                                                                                    Instance.new"TextButton".Size = UDim2.new(1, 0, 0.142000005, 0);
+                                                                                                    Instance.new"TextButton".Font = Enum.Font.Gotham;
+                                                                                                    Instance.new"TextButton".Text = "Text";
+                                                                                                    Instance.new"TextButton".TextColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"TextButton".TextSize = "TextSize";
+                                                                                                    Instance.new"TextButton".TextWrapped = "TextWrapped";
+                                                                                                    Instance.new"ImageLabel".Parent = Instance.new"TextButton";
+                                                                                                    Instance.new"ImageLabel".AnchorPoint = Vector2.new(0.5, 0.5);
+                                                                                                    Instance.new"ImageLabel".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"ImageLabel".BackgroundTransparency = "BackgroundTransparency";
+                                                                                                    Instance.new"ImageLabel".BorderColor3 = Color3.fromRGB(0, 0, 0);
+                                                                                                    Instance.new"ImageLabel".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"ImageLabel".Position = UDim2.new(0.150000006, 0, 0.5, 0);
+                                                                                                    Instance.new"ImageLabel".Size = UDim2.new(0.200000003, 0, 0.200000003, 0);
+                                                                                                    Instance.new"ImageLabel".SizeConstraint = Enum.SizeConstraint.RelativeXX;
+                                                                                                    Instance.new"ImageLabel".Image = "Image";
+                                                                                                    Instance.new"TextButton".Name = "Name";
+                                                                                                    Instance.new"TextButton".Parent = Instance.new"ScrollingFrame";
+                                                                                                    Instance.new"TextButton".BackgroundColor3 = Color3.fromRGB(20, 20, 20);
+                                                                                                    Instance.new"TextButton".BorderColor3 = Color3.fromRGB(10, 10, 10);
+                                                                                                    Instance.new"TextButton".LayoutOrder = "LayoutOrder";
+                                                                                                    Instance.new"TextButton".Position = UDim2.new(0, 0, 0.00999999978, 0);
+                                                                                                    Instance.new"TextButton".Size = UDim2.new(1, 0, 0.142000005, 0);
+                                                                                                    Instance.new"TextButton".Font = Enum.Font.Gotham;
+                                                                                                    Instance.new"TextButton".Text = "Text";
+                                                                                                    Instance.new"TextButton".TextColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"TextButton".TextSize = "TextSize";
+                                                                                                    Instance.new"TextButton".TextWrapped = "TextWrapped";
+                                                                                                    Instance.new"ImageLabel".Parent = Instance.new"TextButton";
+                                                                                                    Instance.new"ImageLabel".AnchorPoint = Vector2.new(0.5, 0.5);
+                                                                                                    Instance.new"ImageLabel".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"ImageLabel".BackgroundTransparency = "BackgroundTransparency";
+                                                                                                    Instance.new"ImageLabel".BorderColor3 = Color3.fromRGB(0, 0, 0);
+                                                                                                    Instance.new"ImageLabel".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"ImageLabel".Position = UDim2.new(0.150000006, 0, 0.5, 0);
+                                                                                                    Instance.new"ImageLabel".Size = UDim2.new(0.200000003, 0, 0.200000003, 0);
+                                                                                                    Instance.new"ImageLabel".SizeConstraint = Enum.SizeConstraint.RelativeXX;
+                                                                                                    Instance.new"ImageLabel".Image = "Image";
+                                                                                                    Instance.new"UIListLayout".Parent = Instance.new"ScrollingFrame";
+                                                                                                    Instance.new"UIListLayout".SortOrder = Enum.SortOrder.LayoutOrder;
+                                                                                                    Instance.new"TextButton".Name = "Name";
+                                                                                                    Instance.new"TextButton".Parent = Instance.new"ScrollingFrame";
+                                                                                                    Instance.new"TextButton".BackgroundColor3 = Color3.fromRGB(20, 20, 20);
+                                                                                                    Instance.new"TextButton".BorderColor3 = Color3.fromRGB(10, 10, 10);
+                                                                                                    Instance.new"TextButton".LayoutOrder = "LayoutOrder";
+                                                                                                    Instance.new"TextButton".Position = UDim2.new(0, 0, 0.00999999978, 0);
+                                                                                                    Instance.new"TextButton".Size = UDim2.new(1, 0, 0.142000005, 0);
+                                                                                                    Instance.new"TextButton".Font = Enum.Font.Gotham;
+                                                                                                    Instance.new"TextButton".Text = "Text";
+                                                                                                    Instance.new"TextButton".TextColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"TextButton".TextSize = "TextSize";
+                                                                                                    Instance.new"TextButton".TextWrapped = "TextWrapped";
+                                                                                                    Instance.new"ImageLabel".Parent = Instance.new"TextButton";
+                                                                                                    Instance.new"ImageLabel".AnchorPoint = Vector2.new(0.5, 0.5);
+                                                                                                    Instance.new"ImageLabel".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"ImageLabel".BackgroundTransparency = "BackgroundTransparency";
+                                                                                                    Instance.new"ImageLabel".BorderColor3 = Color3.fromRGB(0, 0, 0);
+                                                                                                    Instance.new"ImageLabel".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"ImageLabel".Position = UDim2.new(0.150000006, 0, 0.5, 0);
+                                                                                                    Instance.new"ImageLabel".Size = UDim2.new(0.200000003, 0, 0.200000003, 0);
+                                                                                                    Instance.new"ImageLabel".SizeConstraint = Enum.SizeConstraint.RelativeXX;
+                                                                                                    Instance.new"ImageLabel".Image = "Image";
+                                                                                                    Instance.new"TextButton".Name = "Name";
+                                                                                                    Instance.new"TextButton".Parent = Instance.new"ScrollingFrame";
+                                                                                                    Instance.new"TextButton".BackgroundColor3 = Color3.fromRGB(20, 20, 20);
+                                                                                                    Instance.new"TextButton".BorderColor3 = Color3.fromRGB(10, 10, 10);
+                                                                                                    Instance.new"TextButton".LayoutOrder = "LayoutOrder";
+                                                                                                    Instance.new"TextButton".Position = UDim2.new(0, 0, 0.00999999978, 0);
+                                                                                                    Instance.new"TextButton".Size = UDim2.new(1, 0, 0.142000005, 0);
+                                                                                                    Instance.new"TextButton".Font = Enum.Font.Gotham;
+                                                                                                    Instance.new"TextButton".Text = "Text";
+                                                                                                    Instance.new"TextButton".TextColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"TextButton".TextSize = "TextSize";
+                                                                                                    Instance.new"TextButton".TextWrapped = "TextWrapped";
+                                                                                                    Instance.new"ImageLabel".Parent = Instance.new"TextButton";
+                                                                                                    Instance.new"ImageLabel".AnchorPoint = Vector2.new(0.5, 0.5);
+                                                                                                    Instance.new"ImageLabel".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"ImageLabel".BackgroundTransparency = "BackgroundTransparency";
+                                                                                                    Instance.new"ImageLabel".BorderColor3 = Color3.fromRGB(0, 0, 0);
+                                                                                                    Instance.new"ImageLabel".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"ImageLabel".Position = UDim2.new(0.150000006, 0, 0.5, 0);
+                                                                                                    Instance.new"ImageLabel".Size = UDim2.new(0.200000003, 0, 0.200000003, 0);
+                                                                                                    Instance.new"ImageLabel".SizeConstraint = Enum.SizeConstraint.RelativeXX;
+                                                                                                    Instance.new"ImageLabel".Image = "Image";
+                                                                                                    Instance.new"TextButton".Name = "Name";
+                                                                                                    Instance.new"TextButton".Parent = Instance.new"ScrollingFrame";
+                                                                                                    Instance.new"TextButton".BackgroundColor3 = Color3.fromRGB(20, 20, 20);
+                                                                                                    Instance.new"TextButton".BorderColor3 = Color3.fromRGB(10, 10, 10);
+                                                                                                    Instance.new"TextButton".LayoutOrder = "LayoutOrder";
+                                                                                                    Instance.new"TextButton".Position = UDim2.new(0, 0, 0.00999999978, 0);
+                                                                                                    Instance.new"TextButton".Size = UDim2.new(1, 0, 0.142000005, 0);
+                                                                                                    Instance.new"TextButton".Font = Enum.Font.Gotham;
+                                                                                                    Instance.new"TextButton".Text = "Text";
+                                                                                                    Instance.new"TextButton".TextColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"TextButton".TextSize = "TextSize";
+                                                                                                    Instance.new"TextButton".TextWrapped = "TextWrapped";
+                                                                                                    Instance.new"ImageLabel".Parent = Instance.new"TextButton";
+                                                                                                    Instance.new"ImageLabel".AnchorPoint = Vector2.new(0.5, 0.5);
+                                                                                                    Instance.new"ImageLabel".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"ImageLabel".BackgroundTransparency = "BackgroundTransparency";
+                                                                                                    Instance.new"ImageLabel".BorderColor3 = Color3.fromRGB(0, 0, 0);
+                                                                                                    Instance.new"ImageLabel".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"ImageLabel".Position = UDim2.new(0.150000006, 0, 0.5, 0);
+                                                                                                    Instance.new"ImageLabel".Size = UDim2.new(0.200000003, 0, 0.200000003, 0);
+                                                                                                    Instance.new"ImageLabel".SizeConstraint = Enum.SizeConstraint.RelativeXX;
+                                                                                                    Instance.new"ImageLabel".Image = "Image";
+                                                                                                    Instance.new"TextButton".Name = "Name";
+                                                                                                    Instance.new"TextButton".Parent = Instance.new"ScrollingFrame";
+                                                                                                    Instance.new"TextButton".BackgroundColor3 = Color3.fromRGB(20, 20, 20);
+                                                                                                    Instance.new"TextButton".BorderColor3 = Color3.fromRGB(10, 10, 10);
+                                                                                                    Instance.new"TextButton".LayoutOrder = "LayoutOrder";
+                                                                                                    Instance.new"TextButton".Position = UDim2.new(0, 0, 0.00999999978, 0);
+                                                                                                    Instance.new"TextButton".Size = UDim2.new(1, 0, 0.142000005, 0);
+                                                                                                    Instance.new"TextButton".Font = Enum.Font.Gotham;
+                                                                                                    Instance.new"TextButton".Text = "Text";
+                                                                                                    Instance.new"TextButton".TextColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"TextButton".TextSize = "TextSize";
+                                                                                                    Instance.new"TextButton".TextWrapped = "TextWrapped";
+                                                                                                    Instance.new"UIPadding".Parent = Instance.new"ScrollingFrame";
+                                                                                                    Instance.new"UIListLayout".Parent = Instance.new"Frame";
+                                                                                                    Instance.new"UIListLayout".SortOrder = Enum.SortOrder.LayoutOrder;
+                                                                                                    Instance.new"Frame".Parent = Instance.new"Frame";
+                                                                                                    Instance.new"Frame".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"Frame".BackgroundTransparency = "BackgroundTransparency";
+                                                                                                    Instance.new"Frame".BorderColor3 = Color3.fromRGB(0, 0, 0);
+                                                                                                    Instance.new"Frame".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"Frame".Size = UDim2.new(1, 0, 0.1, 0);
+                                                                                                    Instance.new"TextLabel".Parent = Instance.new"Frame";
+                                                                                                    Instance.new"TextLabel".BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"TextLabel".BackgroundTransparency = "BackgroundTransparency";
+                                                                                                    Instance.new"TextLabel".BorderColor3 = Color3.fromRGB(0, 0, 0);
+                                                                                                    Instance.new"TextLabel".BorderSizePixel = "BorderSizePixel";
+                                                                                                    Instance.new"TextLabel".Size = UDim2.new(1, 0, 1, 0);
+                                                                                                    Instance.new"TextLabel".Font = Enum.Font.Gotham;
+                                                                                                    Instance.new"TextLabel".Text = "Text";
+                                                                                                    Instance.new"TextLabel".TextColor3 = Color3.fromRGB(255, 255, 255);
+                                                                                                    Instance.new"TextLabel".TextScaled = "TextScaled";
+                                                                                                    Instance.new"TextLabel".TextSize = "TextSize";
+                                                                                                    Instance.new"TextLabel".TextWrapped = "TextWrapped";
+                                                                                                    Instance.new"TextLabel".TextXAlignment = Enum.TextXAlignment.Left;
+                                                                                                    Instance.new"UIPadding".Parent = Instance.new"Frame";
+                                                                                                    Instance.new"UIPadding".PaddingLeft = UDim.new(0, 5);
+                                                                                                    Instance.new"UIPadding".PaddingTop = UDim.new(0, 5);
+                                                                                                    Instance.new"UIPadding".PaddingRight = UDim.new(0, 5);
+                                                                                                    Instance.new"UIPadding".PaddingBottom = UDim.new(0, 5);
+                                                                                                    game:GetService"RunService".Heartbeat:Connect(function() end);
+                                                                                                    Instance.new"TextButton".MouseButton1Click:Connect(function() end);
+                                                                                                    Instance.new"Frame".InputBegan:Connect(function() end);
+                                                                                                    Instance.new"Frame".InputChanged:Connect(function() end);
+                                                                                                    game:GetService"UserInputService".InputChanged:Connect(function() end);
+                                                                                                    if game:GetService"Players".LocalPlayer.Character then
+                                                                                                      Instance.new"TextButton".MouseButton1Click:Connect(function() end);
+                                                                                                      Instance.new"TextButton".MouseButton1Click:Connect(function() end);
+                                                                                                      Instance.new"TextButton".MouseButton1Click:Connect(function() end);
+                                                                                                      Instance.new"TextButton".MouseButton1Click:Connect(function() end);
+                                                                                                      Instance.new"TextButton".MouseButton1Click:Connect(function() end);
+                                                                                                      if not 0 then
+                                                                                                        if not 0 then
+                                                                                                          upvalue2.Active = "Active";
+                                                                                                          upvalue0("", true, true, false);
+                                                                                                        end
+                                                                                                      end
+                                                                                                    end
+                                                                                                    return;
+                                                                                                    workspace:GetDescendants();
+                                                                                                    ipairs...;
+                                                                                                    if not true:IsA"Model" then
+                                                                                                      if not true:FindFirstChild"Humanoid" then
+                                                                                                        if not true:FindFirstChild"HumanoidRootPart" then
+                                                                                                          if not 0 then
+                                                                                                            if not (1 == nil) then
+                                                                                                              if not (0 < nil.Health) then
+                                                                                                                if true == upvalue0.Character then
+                                                                                                                  if not 0 then
+                                                                                                                    if not nil then
+                                                                                                                      game:GetService"Workspace".CurrentCamera:WorldToViewportPointnil.Position;
+                                                                                                                      if not game:GetService"Workspace".CurrentCamera then
+                                                                                                                        if not 0 then
+                                                                                                                          if not ((Vector2.new((game:GetService"GuiService":GetScreenResolution().X / 2), (game:GetService"GuiService":GetScreenResolution().Y / 2)) - Vector2.new(game:GetService"Workspace".CurrentCamera:WorldToViewportPoint.X, game:GetService"Workspace".CurrentCamera:WorldToViewportPoint.Y)).Magnitude < math.huge) then
+                                                                                                                            if not 0 then
+                                                                                                                              if not 0 then
+                                                                                                                              end
+                                                                                                                            end
+                                                                                                                          end
+                                                                                                                        end
+                                                                                                                      end
+                                                                                                                    end
+                                                                                                                  end
+                                                                                                                end
+                                                                                                                if not 0 then
+                                                                                                                end
+                                                                                                                if not nil then
+                                                                                                                  if not 0 then
+                                                                                                                    if not (0 == 0) then
+                                                                                                                    end
+                                                                                                                  end
+                                                                                                                  if not 0 then
+                                                                                                                  end
+                                                                                                                  return nil;
+                                                                                                                  upvalue0 = upvalue1.Character:FindFirstChild"Humanoid";
+                                                                                                                  if not upvalue2 then
+                                                                                                                    if not 0 then
+                                                                                                                      if not upvalue0 then
+                                                                                                                        if not (upvalue0.Health <= 0) then
+                                                                                                                          if not 0 then
+                                                                                                                            if not 0 then
+                                                                                                                              if not 0 then
+                                                                                                                                upvalue3 = nil;
+                                                                                                                                upvalue4.Text = "Text";
+                                                                                                                                if not (2 == 2) then
+                                                                                                                                  return;
+                                                                                                                                  if not 1 then
+                                                                                                                                    if not 2 then
+                                                                                                                                      upvalue2 = false;
+                                                                                                                                      upvalue5 = nil;
+                                                                                                                                    end
+                                                                                                                                  end
+                                                                                                                                end
+                                                                                                                              end
+                                                                                                                              if not upvalue5 then
+                                                                                                                                if not upvalue3 then
+                                                                                                                                  if not (0 < upvalue3.Health) then
+                                                                                                                                    workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.p, (upvalue5.Position + (upvalue5.Velocity * upvalue6)));
+                                                                                                                                    if not (2 == 0) then
+                                                                                                                                      if upvalue5 then
+                                                                                                                                        if not 0 then
+                                                                                                                                          if not 0 then
+                                                                                                                                            if not 0 then
+                                                                                                                                              if not 0 then
+                                                                                                                                                wait0.1;
+                                                                                                                                                upvalue5 = upvalue7();
+                                                                                                                                              end
+                                                                                                                                            end
+                                                                                                                                          end
+                                                                                                                                          if not upvalue5 then
+                                                                                                                                            upvalue3 = upvalue5.Parent:FindFirstChild"Humanoid";
+                                                                                                                                          end
+                                                                                                                                        end
+                                                                                                                                      end
+                                                                                                                                      upvalue4.Text = "Text";
+                                                                                                                                      if not 0 then
+                                                                                                                                        upvalue5 = nil;
+                                                                                                                                        upvalue3 = nil;
+                                                                                                                                        if not 1 then
+                                                                                                                                          if not (1 == 0) then
+                                                                                                                                            if not 0 then
+                                                                                                                                              if not upvalue7() then
+                                                                                                                                                if not 0 then
+                                                                                                                                                  if not 0 then
+                                                                                                                                                    upvalue5 = upvalue7();
+                                                                                                                                                    upvalue3 = upvalue5.Parent:FindFirstChild"Humanoid";
+                                                                                                                                                  end
+                                                                                                                                                end
+                                                                                                                                              end
+                                                                                                                                            end
+                                                                                                                                          end
+                                                                                                                                        end
+                                                                                                                                        return;
+                                                                                                                                        if not 0 then
+                                                                                                                                          if not 0 then
+                                                                                                                                            upvalue0 = (not upvalue0);
+                                                                                                                                            if upvalue0 then
+                                                                                                                                              if not 0 then
+                                                                                                                                                if not 0 then
+                                                                                                                                                  upvalue1.Text = "Text";
+                                                                                                                                                  upvalue2 = true;
+                                                                                                                                                  if not 1 then
+                                                                                                                                                    upvalue3 = upvalue4();
+                                                                                                                                                    if not upvalue3 then
+                                                                                                                                                      upvalue5 = upvalue3.Parent:FindFirstChild"Humanoid";
+                                                                                                                                                    end
+                                                                                                                                                  end
+                                                                                                                                                end
+                                                                                                                                              end
+                                                                                                                                              if not 0 then
+                                                                                                                                                if not (0 == 0) then
+                                                                                                                                                  upvalue1.Text = "Text";
+                                                                                                                                                  upvalue2 = false;
+                                                                                                                                                  if not 1 then
+                                                                                                                                                    upvalue3 = nil;
+                                                                                                                                                    upvalue5 = nil;
+                                                                                                                                                  end
+                                                                                                                                                end
+                                                                                                                                              end
+                                                                                                                                            end
+                                                                                                                                          end
+                                                                                                                                        end
+                                                                                                                                      end
+                                                                                                                                      return;
+                                                                                                                                      if not (0 == 0) then
+                                                                                                                                        upvalue1.Position = UDim2.new(upvalue2.X.Scale, (upvalue2.X.Offset + (0.Position - upvalue0).X), upvalue2.Y.Scale, (upvalue2.Y.Offset + (0.Position - upvalue0).Y));
+                                                                                                                                      end
+                                                                                                                                      return;
+                                                                                                                                      if 0.UserInputType == Enum.UserInputType.MouseButton1 then
+                                                                                                                                        if not (0.UserInputType == Enum.UserInputType.Touch) then
+                                                                                                                                          if not 0 then
+                                                                                                                                            if not 0 then
+                                                                                                                                              upvalue0 = true;
+                                                                                                                                              upvalue1 = 0.Position;
+                                                                                                                                              if not (1 == 1) then
+                                                                                                                                                upvalue2 = upvalue3.Position;
+                                                                                                                                                0.Changed:Connect(function() end);
+                                                                                                                                              end
+                                                                                                                                            end
+                                                                                                                                          end
+                                                                                                                                          return;
+                                                                                                                                          if not (upvalue0.UserInputState == Enum.UserInputState.End) then
+                                                                                                                                            upvalue1 = false;
+                                                                                                                                            return;
+                                                                                                                                            if false.UserInputType == Enum.UserInputType.MouseMovement then
+                                                                                                                                              if not (false.UserInputType == Enum.UserInputType.Touch) then
+                                                                                                                                                upvalue0 = false;
+                                                                                                                                                return;
+                                                                                                                                                if not (false == upvalue0) then
+                                                                                                                                                  if not upvalue1 then
+                                                                                                                                                    upvalue2false;
+                                                                                                                                                    return;
+                                                                                                                                                    if not 0 then
+                                                                                                                                                      {}.Mobile = "Mobile";
+                                                                                                                                                      {}.Goal = false;
+                                                                                                                                                      {}.Tool = upvalue2;
+                                                                                                                                                      {}[1] = {};
+                                                                                                                                                      unpack({});
+                                                                                                                                                      upvalue0.Character.Communicate:FireServer...;
+                                                                                                                                                    end
+                                                                                                                                                    return;
+                                                                                                                                                    if not 0 then
+                                                                                                                                                      {}.Dash = Enum.KeyCode.W;
+                                                                                                                                                      {}.Key = Enum.KeyCode.Q;
+                                                                                                                                                      {}.Goal = "Goal";
+                                                                                                                                                      {}[1] = {};
+                                                                                                                                                      unpack({});
+                                                                                                                                                      upvalue0.Character.Communicate:FireServer...;
+                                                                                                                                                    end
+                                                                                                                                                    return;
+                                                                                                                                                    if not 0 then
+                                                                                                                                                      if not 0 then
+                                                                                                                                                        if not 0 then
+                                                                                                                                                          upvalue0.CFrame = (upvalue0.CFrame * CFrame.new(0, 0, (-2)));
+                                                                                                                                                          wait();
+                                                                                                                                                        end
+                                                                                                                                                      end
+                                                                                                                                                    end
+                                                                                                                                                  end
+                                                                                                                                                end
+                                                                                                                                                return;
+                                                                                                                                                if not 0 then
+                                                                                                                                                  upvalue0"RightClick";
+                                                                                                                                                  upvalue0"RightClickRelease";
+                                                                                                                                                  if not 2 then
+                                                                                                                                                    upvalue0"Jump";
+                                                                                                                                                    upvalue0"StopJump";
+                                                                                                                                                    if not 3 then
+                                                                                                                                                      wait0.5;
+                                                                                                                                                      if not 3 then
+                                                                                                                                                        upvalue0"LeftClick";
+                                                                                                                                                        upvalue0"LeftClickRelease";
+                                                                                                                                                      end
+                                                                                                                                                      return;
+                                                                                                                                                      if not 0 then
+                                                                                                                                                        if not upvalue0.Backpack:FindFirstChild1 then
+                                                                                                                                                          if not 0 then
+                                                                                                                                                            if not 0 then
+                                                                                                                                                              upvalue0.Backpack:FindFirstChild1.Parent = upvalue0.Character;
+                                                                                                                                                              wait3;
+                                                                                                                                                              if not 1 then
+                                                                                                                                                                upvalue0.Backpack:FindFirstChild1.Parent = upvalue0.Backpack;
+                                                                                                                                                              end
+                                                                                                                                                            end
+                                                                                                                                                          end
+                                                                                                                                                        end
+                                                                                                                                                      end
+                                                                                                                                                      return;
+                                                                                                                                                      if not 0 then
+                                                                                                                                                        upvalue0(1, 0);
+                                                                                                                                                        upvalue0(3, upvalue0.Backpack:FindFirstChild1);
+                                                                                                                                                        if not (1 == 1) then
+                                                                                                                                                          wait0;
+                                                                                                                                                        end
+                                                                                                                                                        return;
+                                                                                                                                                        if not 0 then
+                                                                                                                                                          if not 0 then
+                                                                                                                                                            upvalue0(1, 3);
+                                                                                                                                                            if not 0 then
+                                                                                                                                                              if not 0 then
+                                                                                                                                                                if not 0 then
+                                                                                                                                                                  upvalue0(0, upvalue0.Backpack:FindFirstChild1);
+                                                                                                                                                                  if not 0 then
+                                                                                                                                                                    upvalue0(0, 1);
+                                                                                                                                                                  end
+                                                                                                                                                                end
+                                                                                                                                                              end
+                                                                                                                                                            end
+                                                                                                                                                          end
+                                                                                                                                                        end
+                                                                                                                                                      end
+                                                                                                                                                      return;
+                                                                                                                                                      if not 0 then
+                                                                                                                                                        if not 0 then
+                                                                                                                                                          if not 0 then
+                                                                                                                                                            upvalue0 = upvalue1:WaitForChild"HumanoidRootPart";
+                                                                                                                                                            if not 0 then
+                                                                                                                                                              if upvalue2.Character then
+                                                                                                                                                                upvalue1 = upvalue2.CharacterAdded:Wait();
+                                                                                                                                                                upvalue3 = upvalue1:WaitForChild"Humanoid";
+                                                                                                                                                                if not 1 then
+                                                                                                                                                                  if not 0 then
+                                                                                                                                                                    upvalue4();
+                                                                                                                                                                    upvalue5("Consecutive Punches", 1.6, "Shove", 1.6);
+                                                                                                                                                                    if not 1 then
+                                                                                                                                                                      upvalue68;
+                                                                                                                                                                    end
+                                                                                                                                                                    if not (3 == 2) then
+                                                                                                                                                                      upvalue7("Uppercut", 1);
+                                                                                                                                                                      upvalue68;
+                                                                                                                                                                      upvalue7("Normal Punch", 1);
+                                                                                                                                                                      if not 2 then
+                                                                                                                                                                        wait();
+                                                                                                                                                                        upvalue8();
+                                                                                                                                                                        wait1;
+                                                                                                                                                                      end
+                                                                                                                                                                    end
+                                                                                                                                                                    return;
+                                                                                                                                                                    if not 0 then
+                                                                                                                                                                      upvalue0();
+                                                                                                                                                                      upvalue1("Lethal Whirlwind Stream", "Flowing Water", 2.5, 2, 1);
+                                                                                                                                                                      if not 1 then
+                                                                                                                                                                        upvalue2();
+                                                                                                                                                                        wait1.2;
+                                                                                                                                                                        if not 3 then
+                                                                                                                                                                          upvalue3("Hunter's Grasp", 1);
+                                                                                                                                                                          if not 3 then
+                                                                                                                                                                            upvalue42;
+                                                                                                                                                                            wait();
+                                                                                                                                                                            return;
+                                                                                                                                                                            if not 0 then
+                                                                                                                                                                              upvalue0("Beatdown", 3, "Homerun", 2);
+                                                                                                                                                                              upvalue0("Grand Slam", 2, "Foul Ball", 2);
+                                                                                                                                                                              if not 0 then
+                                                                                                                                                                                upvalue1();
+                                                                                                                                                                                return;
+                                                                                                                                                                                if not 0 then
+                                                                                                                                                                                  wait0.6;
+                                                                                                                                                                                  upvalue1.Backpack:FindFirstChild("Expulsive Push");
+                                                                                                                                                                                  upvalue0...;
+                                                                                                                                                                                  if not 2 then
+                                                                                                                                                                                    upvalue2();
+                                                                                                                                                                                    upvalue1.Backpack:FindFirstChild("Expulsive Push");
+                                                                                                                                                                                    upvalue0...;
+                                                                                                                                                                                    if not 1 then
+                                                                                                                                                                                      upvalue3("Crushing Pull", 1, "Windstorm Fury", 1.2);
+                                                                                                                                                                                      upvalue3("Stone Coffin", 2);
+                                                                                                                                                                                      if not 1 then
+                                                                                                                                                                                        upvalue4();
+                                                                                                                                                                                        wait1.4;
+                                                                                                                                                                                        return;
+                                                                                                                                                                                        if not (0 == 0) then
+                                                                                                                                                                                          upvalue0();
+                                                                                                                                                                                          upvalue1("Machine Gun Blows", 1.5);
+                                                                                                                                                                                          if not 1 then
+                                                                                                                                                                                            wait1;
+                                                                                                                                                                                            upvalue2();
+                                                                                                                                                                                            if not 2 then
+                                                                                                                                                                                              if not nil then
+                                                                                                                                                                                                if not 0 then
+                                                                                                                                                                                                  if not 0 then
+                                                                                                                                                                                                    nil:ChangeStateEnum.HumanoidStateType.Jumping;
+                                                                                                                                                                                                    wait0.1;
+                                                                                                                                                                                                    if not 1 then
+                                                                                                                                                                                                      upvalue4.Backpack:FindFirstChild("Ignition Burst");
+                                                                                                                                                                                                      upvalue3...;
+                                                                                                                                                                                                      if not 1 then
+                                                                                                                                                                                                        upvalue4.Backpack:FindFirstChild("Blitz Shot");
+                                                                                                                                                                                                        upvalue3...;
+                                                                                                                                                                                                        wait1;
+                                                                                                                                                                                                        if not 3 then
+                                                                                                                                                                                                          upvalue4.Backpack:FindFirstChild("Blitz Shot");
+                                                                                                                                                                                                          upvalue3...;
+                                                                                                                                                                                                          wait0.7;
+                                                                                                                                                                                                        end
+                                                                                                                                                                                                      end
+                                                                                                                                                                                                    end
+                                                                                                                                                                                                    if not (2 == 2) then
+                                                                                                                                                                                                      wait1.2;
+                                                                                                                                                                                                      upvalue4.Backpack:FindFirstChild("Jet Dive");
+                                                                                                                                                                                                      upvalue3...;
+                                                                                                                                                                                                      if not (3 == 3) then
+                                                                                                                                                                                                        wait2.95;
+                                                                                                                                                                                                        return;
+                                                                                                                                                                                                        if not 0 then
+                                                                                                                                                                                                          if not 0 then
+                                                                                                                                                                                                            upvalue0.Text = "Text";
+                                                                                                                                                                                                            wait2;
+                                                                                                                                                                                                            if not 2 then
+                                                                                                                                                                                                              upvalue0.TextScaled = "TextScaled";
+                                                                                                                                                                                                              upvalue0.Text = "Text";
+                                                                                                                                                                                                              if not 2 then
+                                                                                                                                                                                                                getLink();
+                                                                                                                                                                                                                setclipboard...;
+                                                                                                                                                                                                                upvalue0.TextScaled = "TextScaled";
+                                                                                                                                                                                                              end
+                                                                                                                                                                                                            end
+                                                                                                                                                                                                            return;
+                                                                                                                                                                                                            if not 0 then
+                                                                                                                                                                                                              VerifyIsTrue(upvalue0.Parent.KeyBox.Text, true);
+                                                                                                                                                                                                            end
+                                                                                                                                                                                                            return;
+                                                                                                                                                                                                          end
+                                                                                                                                                                                                        end
+                                                                                                                                                                                                      end
+                                                                                                                                                                                                    end
+                                                                                                                                                                                                  end
+                                                                                                                                                                                                end
+                                                                                                                                                                                              end
+                                                                                                                                                                                            end
+                                                                                                                                                                                          end
+                                                                                                                                                                                        end
+                                                                                                                                                                                      end
+                                                                                                                                                                                    end
+                                                                                                                                                                                  end
+                                                                                                                                                                                end
+                                                                                                                                                                              end
+                                                                                                                                                                            end
+                                                                                                                                                                          end
+                                                                                                                                                                        end
+                                                                                                                                                                      end
+                                                                                                                                                                    end
+                                                                                                                                                                  end
+                                                                                                                                                                end
+                                                                                                                                                              end
+                                                                                                                                                            end
+                                                                                                                                                          end
+                                                                                                                                                        end
+                                                                                                                                                      end
+                                                                                                                                                    end
+                                                                                                                                                  end
+                                                                                                                                                end
+                                                                                                                                              end
+                                                                                                                                            end
+                                                                                                                                          end
+                                                                                                                                        end
+                                                                                                                                      end
+                                                                                                                                    end
+                                                                                                                                  end
+                                                                                                                                end
+                                                                                                                              end
+                                                                                                                            end
+                                                                                                                          end
+                                                                                                                        end
+                                                                                                                      end
+                                                                                                                    end
+                                                                                                                  end
+                                                                                                                end
+                                                                                                              end
+                                                                                                            end
+                                                                                                          end
+                                                                                                        end
+                                                                                                      end
+                                                                                                    end
+                                                                                                  end
+                                                                                                end
+                                                                                              end
+                                                                                            end
+                                                                                          end
+                                                                                        end
+                                                                                      end
+                                                                                    end
+                                                                                  end
+                                                                                end
+                                                                              end
+                                                                            end
+                                                                          end
+                                                                        end
+                                                                      end
+                                                                    end
+                                                                  end
+                                                                end
+                                                              end
+                                                            end
+                                                          end
+                                                        end
+                                                      end
+                                                    end
+                                                  end
+                                                end
+                                              end
+                                            end
+                                          end
+                                        end
+                                      end
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end
