@@ -1,0 +1,458 @@
+-- Behaviour trace of a Unknown obfuscator script
+-- NOTE: reconstructed from observed behaviour; branches that were not taken
+--       during the trace are missing and conditions are only noted in comments.
+-- run status: finished
+-- 433 statements recorded in 0.11s
+
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local PlayerGui = Players.LocalPlayer:WaitForChild("PlayerGui")
+local EliteKeySystem = Instance.new("ScreenGui")
+EliteKeySystem.Name = "EliteKeySystem"
+EliteKeySystem.ResetOnSpawn = false
+EliteKeySystem.IgnoreGuiInset = true
+EliteKeySystem.Parent = PlayerGui
+local BlurOverlay = Instance.new("Frame")
+BlurOverlay.Name = "BlurOverlay"
+BlurOverlay.Size = UDim2.new(1, 0, 1, 0)
+BlurOverlay.BackgroundColor3 = Color3.fromRGB(5, 5, 5)
+BlurOverlay.BackgroundTransparency = 1
+BlurOverlay.BorderSizePixel = 0
+BlurOverlay.Parent = EliteKeySystem
+local ChangelogFrame = Instance.new("ScrollingFrame")
+ChangelogFrame.Name = "ChangelogFrame"
+ChangelogFrame.Size = UDim2.new(0, 210, 0, 310)
+ChangelogFrame.Position = UDim2.new(0.5, -385, 0.5, -155)
+ChangelogFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+ChangelogFrame.BorderSizePixel = 0
+ChangelogFrame.BackgroundTransparency = 1
+ChangelogFrame.ScrollBarThickness = 0
+ChangelogFrame.CanvasSize = UDim2.new(0, 0, 0, 380)
+ChangelogFrame.Visible = false
+ChangelogFrame.Parent = EliteKeySystem
+local UIListLayout = Instance.new("UIListLayout")
+UIListLayout.Parent = ChangelogFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 2)
+local UIPadding = Instance.new("UIPadding")
+UIPadding.Parent = ChangelogFrame
+UIPadding.PaddingLeft = UDim.new(0, 10)
+UIPadding.PaddingRight = UDim.new(0, 10)
+UIPadding.PaddingTop = UDim.new(0, 10)
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = ChangelogFrame
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Thickness = 2
+UIStroke.Color = Color3.fromRGB(40, 40, 50)
+UIStroke.Transparency = 1
+UIStroke.Parent = ChangelogFrame
+local TextLabel = Instance.new("TextLabel")
+TextLabel.Size = UDim2.new(1, 0, 0, 25)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Text = "•Why We Added Key System?"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.TextTransparency = 1
+TextLabel.Parent = ChangelogFrame
+local TextLabel2 = Instance.new("TextLabel")
+TextLabel2.Size = UDim2.new(1, 0, 0, 135)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.Text = "• We Added Key System To Support Our Current Developers. I know some of you All may be mad because of Key System But It's One Way to Support The Current Developers And Besides, The Checkpoint Is Only 1 Step. The Key is Also Permanent It's just different Keys for Different Scripts. Also If You want more Better Scripts Just Donate To Our Server Or Boost The server:"
+TextLabel2.TextColor3 = Color3.fromRGB(180, 180, 190)
+TextLabel2.TextSize = 11
+TextLabel2.Font = Enum.Font.Gotham
+TextLabel2.TextWrapped = true
+TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel2.TextYAlignment = Enum.TextYAlignment.Top
+TextLabel2.TextTransparency = 1
+TextLabel2.Parent = ChangelogFrame
+local TextLabel3 = Instance.new("TextLabel")
+TextLabel3.Size = UDim2.new(1, 0, 0, 25)
+TextLabel3.BackgroundTransparency = 1
+TextLabel3.Text = "•Key System Explanation"
+TextLabel3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.TextSize = 14
+TextLabel3.Font = Enum.Font.GothamBold
+TextLabel3.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel3.TextTransparency = 1
+TextLabel3.Parent = ChangelogFrame
+local TextLabel4 = Instance.new("TextLabel")
+TextLabel4.Size = UDim2.new(1, 0, 0, 85)
+TextLabel4.BackgroundTransparency = 1
+TextLabel4.Text = "• Key Saves For Only 6 Hours But If Someone Donates, We Will Change It To 24 hours. Key System Will Be Skipped When Key Saves. Since Donating Supports our HardWorking Team."
+TextLabel4.TextColor3 = Color3.fromRGB(180, 180, 190)
+TextLabel4.TextSize = 11
+TextLabel4.Font = Enum.Font.Gotham
+TextLabel4.TextWrapped = true
+TextLabel4.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel4.TextYAlignment = Enum.TextYAlignment.Top
+TextLabel4.TextTransparency = 1
+TextLabel4.Parent = ChangelogFrame
+local Frame2 = Instance.new("Frame")
+Frame2.Size = UDim2.new(1, 0, 0, 30)
+Frame2.BackgroundTransparency = 1
+Frame2.Parent = ChangelogFrame
+local TextButton = Instance.new("TextButton")
+TextButton.Size = UDim2.new(0, 18, 0, 18)
+TextButton.Position = UDim2.new(0, 0, 0.5, -9)
+TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+TextButton.BorderSizePixel = 0
+TextButton.Text = "✓"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14
+TextButton.Font = Enum.Font.GothamBold
+TextButton.BackgroundTransparency = 1
+TextButton.TextTransparency = 1
+TextButton.Parent = Frame2
+local UICorner2 = Instance.new("UICorner")
+UICorner2.CornerRadius = UDim.new(0, 4)
+UICorner2.Parent = TextButton
+local UIStroke2 = Instance.new("UIStroke")
+UIStroke2.Thickness = 1
+UIStroke2.Color = Color3.fromRGB(60, 60, 70)
+UIStroke2.Transparency = 1
+UIStroke2.Parent = TextButton
+local TextLabel5 = Instance.new("TextLabel")
+TextLabel5.Size = UDim2.new(1, -25, 1, 0)
+TextLabel5.Position = UDim2.new(0, 25, 0, 0)
+TextLabel5.BackgroundTransparency = 1
+TextLabel5.Text = "Save Key for 6 Hours"
+TextLabel5.TextColor3 = Color3.fromRGB(200, 200, 210)
+TextLabel5.TextSize = 11
+TextLabel5.Font = Enum.Font.GothamMedium
+TextLabel5.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel5.TextTransparency = 1
+TextLabel5.Parent = Frame2
+local TextButton2 = Instance.new("TextButton")
+TextButton2.Size = UDim2.new(1, 0, 0, 30)
+TextButton2.BackgroundTransparency = 1
+TextButton2.Text = "CLICK TO COPY DISCORD"
+TextButton2.TextColor3 = Color3.fromRGB(100, 150, 255)
+TextButton2.TextSize = 12
+TextButton2.Font = Enum.Font.GothamBold
+TextButton2.TextXAlignment = Enum.TextXAlignment.Left
+TextButton2.TextTransparency = 1
+TextButton2.Parent = ChangelogFrame
+local MainFrame = Instance.new("Frame")
+MainFrame.Name = "MainFrame"
+MainFrame.Size = UDim2.new(0, 320, 0, 420)
+MainFrame.Position = UDim2.new(0.5, -160, 1.2, 0)
+MainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Parent = EliteKeySystem
+local UICorner3 = Instance.new("UICorner")
+UICorner3.CornerRadius = UDim.new(0, 16)
+UICorner3.Parent = MainFrame
+local UIStroke3 = Instance.new("UIStroke")
+UIStroke3.Thickness = 2
+UIStroke3.Color = Color3.fromRGB(40, 40, 50)
+UIStroke3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke3.Parent = MainFrame
+local CloseButton = Instance.new("TextButton")
+CloseButton.Name = "CloseButton"
+CloseButton.Size = UDim2.new(0, 30, 0, 30)
+CloseButton.Position = UDim2.new(1, -45, 0, 75)
+CloseButton.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+CloseButton.Text = "×"
+CloseButton.TextColor3 = Color3.fromRGB(200, 200, 200)
+CloseButton.TextSize = 24
+CloseButton.Font = Enum.Font.GothamMedium
+CloseButton.BackgroundTransparency = 1
+CloseButton.TextTransparency = 1
+CloseButton.Parent = MainFrame
+local UICorner4 = Instance.new("UICorner")
+UICorner4.CornerRadius = UDim.new(0, 8)
+UICorner4.Parent = CloseButton
+local UIStroke4 = Instance.new("UIStroke")
+UIStroke4.Thickness = 1
+UIStroke4.Color = Color3.fromRGB(50, 50, 60)
+UIStroke4.Transparency = 1
+UIStroke4.Parent = CloseButton
+local TextButton4 = Instance.new("TextButton")
+TextButton4.Size = UDim2.new(0, 30, 0, 50)
+TextButton4.Position = UDim2.new(0.5, -200, 1.2, 180)
+TextButton4.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+TextButton4.Text = "<"
+TextButton4.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextButton4.TextSize = 16
+TextButton4.Font = Enum.Font.GothamBold
+TextButton4.BackgroundTransparency = 1
+TextButton4.TextTransparency = 1
+TextButton4.Parent = EliteKeySystem
+local UICorner5 = Instance.new("UICorner")
+UICorner5.CornerRadius = UDim.new(0, 6)
+UICorner5.Parent = TextButton4
+local UIStroke5 = Instance.new("UIStroke")
+UIStroke5.Thickness = 2
+UIStroke5.Color = Color3.fromRGB(40, 40, 50)
+UIStroke5.Transparency = 1
+UIStroke5.Parent = TextButton4
+local TextLabel6 = Instance.new("TextLabel")
+TextLabel6.Size = UDim2.new(1, 0, 0, 60)
+TextLabel6.Position = UDim2.new(0, 0, 0, 60)
+TextLabel6.BackgroundTransparency = 1
+TextLabel6.Text = "NOTPAKI KEY ACCESS"
+TextLabel6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel6.TextSize = 22
+TextLabel6.Font = Enum.Font.GothamBold
+TextLabel6.TextTransparency = 1
+TextLabel6.Parent = MainFrame
+local Frame4 = Instance.new("Frame")
+Frame4.Size = UDim2.new(0, 260, 0, 1)
+Frame4.Position = UDim2.new(0.5, -130, 0, 115)
+Frame4.BackgroundColor3 = Color3.fromRGB(60, 60, 70)
+Frame4.BackgroundTransparency = 1
+Frame4.Parent = MainFrame
+local Frame5 = Instance.new("Frame")
+Frame5.Size = UDim2.new(0, 260, 0, 45)
+Frame5.Position = UDim2.new(0.5, -130, 0, 150)
+Frame5.BackgroundColor3 = Color3.fromRGB(25, 25, 30)
+Frame5.BackgroundTransparency = 1
+Frame5.Parent = MainFrame
+local UICorner6 = Instance.new("UICorner")
+UICorner6.CornerRadius = UDim.new(0, 8)
+UICorner6.Parent = Frame5
+local TextBox = Instance.new("TextBox")
+TextBox.Size = UDim2.new(1, -20, 1, 0)
+TextBox.Position = UDim2.new(0, 10, 0, 0)
+TextBox.BackgroundTransparency = 1
+TextBox.Text = ""
+TextBox.PlaceholderText = "Enter your key..."
+TextBox.Font = Enum.Font.Gotham
+TextBox.TextSize = 14
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderColor3 = Color3.fromRGB(100, 100, 110)
+TextBox.TextTransparency = 1
+TextBox.Parent = Frame5
+local TextButton5 = Instance.new("TextButton")
+TextButton5.Size = UDim2.new(0, 260, 0, 45)
+TextButton5.Position = UDim2.new(0.5, -130, 0, 210)
+TextButton5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton5.Font = Enum.Font.GothamBold
+TextButton5.Text = "VERIFY KEY"
+TextButton5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton5.TextSize = 14
+TextButton5.BackgroundTransparency = 1
+TextButton5.TextTransparency = 1
+TextButton5.Parent = MainFrame
+local UICorner7 = Instance.new("UICorner")
+UICorner7.CornerRadius = UDim.new(0, 8)
+UICorner7.Parent = TextButton5
+local TextButton6 = Instance.new("TextButton")
+TextButton6.Size = UDim2.new(0, 260, 0, 30)
+TextButton6.Position = UDim2.new(0.5, -130, 0, 265)
+TextButton6.BackgroundTransparency = 1
+TextButton6.Font = Enum.Font.Gotham
+TextButton6.Text = "Don't have a key? Click here"
+TextButton6.TextColor3 = Color3.fromRGB(150, 150, 160)
+TextButton6.TextSize = 12
+TextButton6.TextTransparency = 1
+TextButton6.Parent = MainFrame
+local TextLabel7 = Instance.new("TextLabel")
+TextLabel7.Size = UDim2.new(0, 260, 0, 80)
+TextLabel7.Position = UDim2.new(0.5, -130, 0, 310)
+TextLabel7.BackgroundTransparency = 1
+TextLabel7.Text = "• Suggest More Scripts In Discord To Help Our Team Brainstorm Ideas And To Help You guys With what you want!"
+TextLabel7.TextColor3 = Color3.fromRGB(150, 150, 160)
+TextLabel7.TextSize = 13
+TextLabel7.Font = Enum.Font.Gotham
+TextLabel7.TextWrapped = true
+TextLabel7.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel7.TextTransparency = 1
+TextLabel7.Parent = MainFrame
+
+TextButton.MouseButton1Click:Connect(function()
+	local tween15 = TweenService:Create(TextButton, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(255, 255, 255) })
+	tween15:Play()
+	local tween16 = TweenService:Create(TextButton, TweenInfo.new(0.2), { TextTransparency = 0 })
+	tween16:Play()
+end)
+
+TextButton2.MouseButton1Click:Connect(function()
+	setclipboard("https://discord.gg/pAZZz59kU")
+	local Frame6 = Instance.new("Frame")
+	Frame6.Size = UDim2.new(0, 300, 0, 45)
+	Frame6.Position = UDim2.new(0.5, -150, 1, 20)
+	Frame6.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+	Frame6.BorderSizePixel = 0
+	Frame6.Parent = EliteKeySystem
+	local UICorner8 = Instance.new("UICorner")
+	UICorner8.CornerRadius = UDim.new(0, 8)
+	UICorner8.Parent = Frame6
+	local UIStroke6 = Instance.new("UIStroke")
+	UIStroke6.Thickness = 2
+	UIStroke6.Color = Color3.fromRGB(40, 40, 50)
+	UIStroke6.Parent = Frame6
+	local TextLabel8 = Instance.new("TextLabel")
+	TextLabel8.Size = UDim2.new(1, -20, 1, 0)
+	TextLabel8.Position = UDim2.new(0, 10, 0, 0)
+	TextLabel8.BackgroundTransparency = 1
+	TextLabel8.Text = "Discord invite copied to clipboard!"
+	TextLabel8.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel8.Font = Enum.Font.GothamMedium
+	TextLabel8.TextSize = 13
+	TextLabel8.TextWrapped = true
+	TextLabel8.Parent = Frame6
+	local tween17 = TweenService:Create(Frame6, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Position = UDim2.new(0.5, -150, 0.9, -20) })
+	tween17:Play()
+
+	task.spawn(function()
+		task.wait(2.5)
+		local tween18 = TweenService:Create(Frame6, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.In), { Position = UDim2.new(0.5, -150, 1, 50) })
+		tween18:Play()
+		tween18.Completed:Wait()
+		Frame6:Destroy()
+	end)
+end)
+
+CloseButton.MouseButton1Click:Connect(function()
+	local tween19 = TweenService:Create(MainFrame, TweenInfo.new(0.8, Enum.EasingStyle.Quart, Enum.EasingDirection.In), { Position = UDim2.new(0.5, -160, 1.2, 0) })
+	tween19:Play()
+	local tween20 = TweenService:Create(TextButton4, TweenInfo.new(0.8, Enum.EasingStyle.Quart, Enum.EasingDirection.In), { Position = UDim2.new(0.5, -200, 1.2, 180) })
+	tween20:Play()
+	local tween21 = TweenService:Create(ChangelogFrame, TweenInfo.new(0.8, Enum.EasingStyle.Quart, Enum.EasingDirection.In), { BackgroundTransparency = 1 })
+	tween21:Play()
+	local tween22 = TweenService:Create(BlurOverlay, TweenInfo.new(0.8, Enum.EasingStyle.Quart, Enum.EasingDirection.In), { BackgroundTransparency = 1 })
+	tween22:Play()
+	task.wait(0.8)
+	EliteKeySystem:Destroy()
+end)
+
+TextButton5.MouseButton1Click:Connect(function()
+	local Frame7 = Instance.new("Frame")
+	Frame7.Size = UDim2.new(0, 300, 0, 45)
+	Frame7.Position = UDim2.new(0.5, -150, 1, 20)
+	Frame7.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+	Frame7.BorderSizePixel = 0
+	Frame7.Parent = EliteKeySystem
+	local UICorner9 = Instance.new("UICorner")
+	UICorner9.CornerRadius = UDim.new(0, 8)
+	UICorner9.Parent = Frame7
+	local UIStroke7 = Instance.new("UIStroke")
+	UIStroke7.Thickness = 2
+	UIStroke7.Color = Color3.fromRGB(40, 40, 50)
+	UIStroke7.Parent = Frame7
+	local TextLabel9 = Instance.new("TextLabel")
+	TextLabel9.Size = UDim2.new(1, -20, 1, 0)
+	TextLabel9.Position = UDim2.new(0, 10, 0, 0)
+	TextLabel9.BackgroundTransparency = 1
+	TextLabel9.Text = "Please enter a key first!"
+	TextLabel9.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel9.Font = Enum.Font.GothamMedium
+	TextLabel9.TextSize = 13
+	TextLabel9.TextWrapped = true
+	TextLabel9.Parent = Frame7
+	local tween23 = TweenService:Create(Frame7, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Position = UDim2.new(0.5, -150, 0.9, -20) })
+	tween23:Play()
+
+	task.spawn(function()
+		task.wait(2.5)
+		local tween24 = TweenService:Create(Frame7, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.In), { Position = UDim2.new(0.5, -150, 1, 50) })
+		tween24:Play()
+		tween24.Completed:Wait()
+		Frame7:Destroy()
+	end)
+end)
+
+TextButton4.MouseButton1Click:Connect(function()
+	TextButton4.Text = ">"
+	ChangelogFrame.Visible = true
+	local tween25 = TweenService:Create(ChangelogFrame, TweenInfo.new(0.4), { BackgroundTransparency = 0 })
+	tween25:Play()
+	local tween26 = TweenService:Create(UIStroke, TweenInfo.new(0.4), { Transparency = 0 })
+	tween26:Play()
+	local tween27 = TweenService:Create(TextLabel, TweenInfo.new(0.4), { TextTransparency = 0 })
+	tween27:Play()
+	local tween28 = TweenService:Create(TextLabel2, TweenInfo.new(0.4), { TextTransparency = 0 })
+	tween28:Play()
+	local tween29 = TweenService:Create(TextLabel3, TweenInfo.new(0.4), { TextTransparency = 0 })
+	tween29:Play()
+	local lastTween = TweenService:Create(TextLabel4, TweenInfo.new(0.4), { TextTransparency = 0 })
+	lastTween:Play()
+	local tween31 = TweenService:Create(TextButton, TweenInfo.new(0.4), { BackgroundTransparency = 0 })
+	tween31:Play()
+	local tween32 = TweenService:Create(TextLabel5, TweenInfo.new(0.4), { TextTransparency = 0 })
+	tween32:Play()
+	local tween33 = TweenService:Create(UIStroke2, TweenInfo.new(0.4), { Transparency = 0 })
+	tween33:Play()
+	local tween34 = TweenService:Create(TextButton2, TweenInfo.new(0.4), { TextTransparency = 0 })
+	tween34:Play()
+	local tween35 = TweenService:Create(TextButton, TweenInfo.new(0.4), { TextTransparency = 0 })
+	tween35:Play()
+end)
+
+TextButton6.MouseButton1Click:Connect(function()
+	setclipboard("https://link-hub.net/1212501/WAywX0dPgAnK")
+	local Frame8 = Instance.new("Frame")
+	Frame8.Size = UDim2.new(0, 300, 0, 45)
+	Frame8.Position = UDim2.new(0.5, -150, 1, 20)
+	Frame8.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+	Frame8.BorderSizePixel = 0
+	Frame8.Parent = EliteKeySystem
+	local UICorner10 = Instance.new("UICorner")
+	UICorner10.CornerRadius = UDim.new(0, 8)
+	UICorner10.Parent = Frame8
+	local UIStroke8 = Instance.new("UIStroke")
+	UIStroke8.Thickness = 2
+	UIStroke8.Color = Color3.fromRGB(40, 40, 50)
+	UIStroke8.Parent = Frame8
+	local TextLabel10 = Instance.new("TextLabel")
+	TextLabel10.Size = UDim2.new(1, -20, 1, 0)
+	TextLabel10.Position = UDim2.new(0, 10, 0, 0)
+	TextLabel10.BackgroundTransparency = 1
+	TextLabel10.Text = "Key link copied to clipboard!"
+	TextLabel10.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel10.Font = Enum.Font.GothamMedium
+	TextLabel10.TextSize = 13
+	TextLabel10.TextWrapped = true
+	TextLabel10.Parent = Frame8
+	local tween36 = TweenService:Create(Frame8, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Position = UDim2.new(0.5, -150, 0.9, -20) })
+	tween36:Play()
+
+	task.spawn(function()
+		task.wait(2.5)
+		local tween37 = TweenService:Create(Frame8, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.In), { Position = UDim2.new(0.5, -150, 1, 50) })
+		tween37:Play()
+		tween37.Completed:Wait()
+		Frame8:Destroy()
+	end)
+end)
+
+-- isfile("NotPaki_Auth.txt") -> false
+local tween = TweenService:Create(BlurOverlay, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { BackgroundTransparency = 0.3 })
+tween:Play()
+local tween2 = TweenService:Create(MainFrame, TweenInfo.new(1.2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Position = UDim2.new(0.5, -160, 0.5, -210) })
+tween2:Play()
+local tween3 = TweenService:Create(TextButton4, TweenInfo.new(1.2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Position = UDim2.new(0.5, -200, 0.5, -25) })
+tween3:Play()
+task.wait(0.6)
+local tween4 = TweenService:Create(TextLabel6, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { TextTransparency = 0 })
+tween4:Play()
+local tween5 = TweenService:Create(Frame4, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { BackgroundTransparency = 0 })
+tween5:Play()
+local tween6 = TweenService:Create(CloseButton, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { BackgroundTransparency = 0, TextTransparency = 0 })
+tween6:Play()
+local tween7 = TweenService:Create(UIStroke4, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { Transparency = 0 })
+tween7:Play()
+local tween8 = TweenService:Create(TextButton4, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { BackgroundTransparency = 0, TextTransparency = 0 })
+tween8:Play()
+local tween9 = TweenService:Create(UIStroke5, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { Transparency = 0 })
+tween9:Play()
+task.wait(0.2)
+local tween10 = TweenService:Create(Frame5, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { BackgroundTransparency = 0 })
+tween10:Play()
+local tween11 = TweenService:Create(TextBox, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { TextTransparency = 0 })
+tween11:Play()
+task.wait(0.2)
+local tween12 = TweenService:Create(TextButton5, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { BackgroundTransparency = 0, TextTransparency = 0 })
+tween12:Play()
+local tween13 = TweenService:Create(TextButton6, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { TextTransparency = 0 })
+tween13:Play()
+task.wait(0.1)
+local tween14 = TweenService:Create(TextLabel7, TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { TextTransparency = 0 })
+tween14:Play()
